@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Properties - Dream Home Realty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-toggle" class="md:hidden">Menu</button>
+            <ul id="mobile-menu" class="hidden md:hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Search Properties</h1>
+            <form id="property-search-form">
+                <input type="text" placeholder="Location" required>
+                <select>
+                    <option value="">Property Type</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="condo">Condo</option>
+                    <option value="townhouse">Townhouse</option>
+                </select>
+                <input type="number" placeholder="Min Price" min="0">
+                <input type="number" placeholder="Max Price" min="0">
+                <select>
+                    <option value="">Bedrooms</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                    <option value="5">5+</option>
+                </select>
+                <select>
+                    <option value="">Bathrooms</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                </select>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Dream Home Realty. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

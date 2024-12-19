@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listings - Dream Home Realty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-toggle" class="md:hidden">Menu</button>
+            <ul id="mobile-menu" class="hidden md:hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Property Listings</h1>
+            <form id="filter-form">
+                <select id="property-type">
+                    <option value="">All Types</option>
+                    <option value="villa">Villa</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="cottage">Cottage</option>
+                    <option value="house">House</option>
+                </select>
+                <input type="number" id="min-price" placeholder="Min Price">
+                <input type="number" id="max-price" placeholder="Max Price">
+            </form>
+            <div class="grid">
+                <div class="property-card" data-price="1200000" data-type="villa">
+                    <img src="https://emmaeatsandexplores.com/wp-content/uploads/2023/03/Villa-Exterior.jpg" alt="Property 1">
+                    <div class="content">
+                        <h3>Luxury Villa</h3>
+                        <p>₹5,00,00,000 (Goa)</p>
+                        <p>5 bed | 4 bath | 4,500 sqft</p>
+                        <a href="property-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="property-card" data-price="500000" data-type="apartment">
+                    <img src="https://wallpapercave.com/wp/wp2449363.jpg" alt="Property 2">
+                    <div class="content">
+                        <h3>Modern Apartment</h3>
+                        <p>₹4,00,00,000 (Mumbai)</p>
+                        <p>2 bed | 2 bath | 1,200 sqft</p>
+                        <a href="property-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="property-card" data-price="350000" data-type="cottage">
+                    <img src="https://www.arts.gov/sites/default/files/styles/nea_media_large_16x9/public/CottageTomMarks.jpeg?h=52605a11&itok=0gO-wCVA" alt="Property 3">
+                    <div class="content">
+                        <h3>Cozy Cottage</h3>
+                        <p>₹3,50,00,000 (Kashmir)</p>
+                        <p>3 bed | 2 bath | 1,800 sqft</p>
+                        <a href="property-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="property-card" data-price="750000" data-type="house">
+                    <img src="https://wallpaperaccess.com/full/1218670.jpg" alt="Property 4">
+                    <div class="content">
+                        <h3>Suburban Family Home</h3>
+                        <p>₹2,00,00,000 (Delhi)</p>
+                        <p>4 bed | 3 bath | 2,500 sqft</p>
+                        <a href="property-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Dream Home Realty. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dream Home Realty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-toggle" class="md:hidden">Menu</button>
+            <ul id="mobile-menu" class="hidden md:hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Have a question or interested in one of our properties? Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number">
+                <select>
+                    <option value="">Inquiry Type</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="property">Property Inquiry</option>
+                    <option value="selling">Selling a Property</option>
+                </select>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Dream Home Realty. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
